@@ -30,6 +30,7 @@ export async function fetchRevenue() {
   }
 }
 
+// Fetch the last 5 invoices
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw[]>`
